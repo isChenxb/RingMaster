@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择情景模式"
+        />
+    
+    <RadioGroup 
+        android:id="@+id/rg_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <RadioButton 
+            android:id="@+id/rb_Mode_mute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="静音"
+            />
+        
+        <RadioButton 
+            android:id="@+id/rb_Mode_shock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="震动"
+            />
+        
+        <RadioButton 
+            android:id="@+id/rb_Mode_ring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="响铃"
+            />
+        
+        <RadioButton 
+            android:id="@+id/rb_Mode_shockring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="响铃+震动"
+            />
+        
+    </RadioGroup>
+    
+    <EditText 
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="添加名称"
+        />
+    
+     <EditText 
+         android:id="@+id/et_distance"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="number"
+         android:hint="指定范围（单位：米）"
+         />
+</LinearLayout>

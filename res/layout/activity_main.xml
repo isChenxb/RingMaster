@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ringmaster.MainActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        />
+    
+    <Button 
+        android:id="@+id/bt_location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/location"
+        />
+    
+    <CheckBox 
+        android:id="@+id/cb_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启翻转静音"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginTop="10dp"
+       android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>
